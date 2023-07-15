@@ -10,6 +10,9 @@
     "deploy": "vite build && git push origin HEAD"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.26",
+    "tailwindcss": "^3.3.3",
     "vite": "^4.4.0"
   }
 }
