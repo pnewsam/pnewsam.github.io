@@ -4,31 +4,31 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <title>Paul T. Newsam</title>
   </head>
-  <body class="bg-gray-50 text-gray-800">
-    <div class="w-full max-w-[1080px] mx-auto p-[16px] sm:p-[40px]">
+  <body class="bg-gray-100 text-gray-800">
+    <div class="w-full max-w-[1080px] mx-auto p-[16px] sm:p-[40px] sm:mb-20">
       <header>
         <nav class="flex items-center gap-4 justify-end py-4">
           <a class="text-lg font-semibold" href="/blog">Blog</a>
           <a class="text-lg font-semibold" href="/about">Likes</a>
         </nav>
       </header>
-      <div class="mt-12">
-        <h1 class="text-3xl sm:text-6xl font-bold mb-2">Hey, I'm Paul.</h1>
+      <div class="mt-12 mb-8">
+        <h1 class="text-3xl sm:text-6xl font-medium mb-2">Hey, I'm Paul.</h1>
         <h2 class="text-lg sm:text-2xl">
           I'm a software developer based in San Diego, CA. ☀️
         </h2>
-        <hr class="border-gray-300 border my-4 max-w-[600px]" />
+        <hr class="border-stone-700 border-2 my-4" />
       </div>
 
       <div>
-        <p class="text-xl text-stone-700 leading-8">
+        <p class="text-xl text-stone-700 leading-8 mb-4">
           Currently I work as a frontend engineer at
           <a
             class="underline underline-offset-2"
@@ -47,37 +47,45 @@
             class="underline underline-offset-2"
             href="https://en.wikipedia.org/wiki/Dev_Bootcamp"
           >
-            Dev Bootcamp
+            Dev Bootcamp</a
+          >.
+        </p>
+
+        <p class="text-xl text-stone-700 leading-8 mb-4">
+          Before I got into the technology industry, I worked as biologist for
+          organizations like
+          <a href="https://www.usgs.gov">USGS</a>,
+          <a href="https://www.pointblue.org/">
+            Point Blue Conservation Science </a
+          >, and
+          <a href="https://www.birdconservancy.org/">
+            Bird Conservancy of the Rockies</a
+          >, conducting bird surveys around the Western U.S.. I've loved animals
+          since I was young, but my professors at
+          <a href="https://www.berkeley.edu/">
+            University of California, Berkeley
           </a>
-          .
+          taught me how to make better sense of the natural environment, and
+          gave me the skills to think analytically.
+        </p>
+        <p class="text-xl text-stone-700 leading-8 mb-4">
+          When I'm not working, I love to go hiking and birdwatching, learn jiu
+          jitsu, and spend time with my friends and family.
         </p>
       </div>
 
-      <div className="lg:pl-20">
-        <a href="https://twitter.com/paultnewsam"> Twitter </a>
-        <a href="https://github.com/pnewsam" className="mt-4"> GitHub </a>
-        <a href="https://www.linkedin.com/in/paul-newsam/" className="mt-4">
-          LinkedIn
-        </a>
-        <a
-          href="mailto:paul.newsam@gmail.com"
-          className="mt-8 border-t border-slate-100 pt-8 dark:border-slate-700/40"
-        >
-          Email
-        </a>
-        <div
-          className="mt-8 border-t border-slate-100 pt-8 dark:border-slate-700/40"
-        >
-          <span
-            className="text-sm font-medium text-slate-800 dark:text-slate-200"
-          >
+      <div class="mt-8">
+        <h3 class="text-xl text-gray-700 font-semibold mb-2">Connect</h3>
+        <div class="inline-flex gap-2">
+          <a href="https://twitter.com/paultnewsam">Twitter</a>
+          <a href="https://github.com/pnewsam">GitHub</a>
+          <a href="https://www.linkedin.com/in/paul-newsam/">LinkedIn</a>
+          <a href="mailto:paul.newsam@gmail.com">Email</a>
+        </div>
+        <div>
+          <span>
             Consulting Inquiries:&nbsp;
-            <a
-              className="text-sm font-medium text-slate-800 transition hover:text-riptide-400 dark:text-slate-200 dark:hover:text-riptide-400"
-              href="https://www.verismus.com"
-            >
-              Verismus, LLC
-            </a>
+            <a href="https://www.verismus.com"> Verismus, LLC </a>
           </span>
         </div>
       </div>

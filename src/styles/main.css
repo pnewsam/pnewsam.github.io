@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Jost", system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+a:hover {
+  color: #2563eb;
+}

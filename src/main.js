@@ -1,4 +1,4 @@
-import "./reset.css";
+import "./styles/reset.css";
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("content loaded");
