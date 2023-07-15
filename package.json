@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && git push origin HEAD"
+    "deploy": "vite build --emptyOutDir && git add -A && git commit -m ='Deploy commit' && git push origin HEAD"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
