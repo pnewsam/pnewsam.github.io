@@ -37,6 +37,23 @@ const postTemplate = (post) => {
   `;
 };
 
+const recentPostTemplate = (post) => {
+  const { createdAt, description } = post.attributes;
+  const readableCreatedAt = new Date(createdAt).toLocaleDateString("en-US", {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+  return `
+  <li class="inline-block border-2 border-gray-700 rounded p-4 w-[32%] shadow-sm">
+    <a class="mb-2 inline-block font-semibold" href="#${post.attributes.slug}">${post.attributes.title}</a>
+    <p class="text-sm">${description}</p>
+    <p class="text-sm">${readableCreatedAt}</p>
+  </li>
+`;
+};
+
 const main = async function () {
   var posts = await getPosts();
   posts = posts.sort(
@@ -50,11 +67,6 @@ const main = async function () {
     console.log({ template, postElement });
     postElement.innerHTML = postTemplate(post);
     document.querySelector("#posts").appendChild(postElement);
-
-    document.querySelector("#posts-list").innerHTML += `
-      <li>
-        <a href="#${post.attributes.slug}">${post.attributes.title}</a>
-      </li>
-    `;
+    document.querySelector("#posts-list").innerHTML += recentPostTemplate(post);
   });
 };

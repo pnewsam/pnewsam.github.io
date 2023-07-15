@@ -64,7 +64,7 @@
   }
   pre,
   blockquote {
-    @apply py-2 px-4 mb-2 text-base bg-blue-50 rounded-md block border-l-4 border-blue-400;
+    @apply py-2 px-4 mb-2 text-base bg-blue-50 rounded-md block border-l-4 border-blue-400 max-w-[calc(100%-8px)] overflow-scroll;
   }
   pre {
     @apply font-mono;
@@ -83,6 +83,6 @@
   }
   .container {
     /* @apply max-w-3xl mx-auto px-4; */
-    @apply w-full max-w-[1080px] mx-auto p-[16px] sm:p-[40px] sm:mb-20;
+    @apply w-full max-w-[960px] mx-auto p-[16px] sm:p-[40px] sm:mb-20;
   }
 }
