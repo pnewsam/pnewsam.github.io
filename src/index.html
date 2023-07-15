@@ -5,15 +5,82 @@
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Paul T. Newsam</title>
   </head>
-  <body>
-    <div id="app"></div>
+  <body class="bg-gray-50 text-gray-800">
+    <div class="w-full max-w-[1080px] mx-auto p-[16px] sm:p-[40px]">
+      <header>
+        <nav class="flex items-center gap-4 justify-end py-4">
+          <a class="text-lg font-semibold" href="/blog">Blog</a>
+          <a class="text-lg font-semibold" href="/about">Likes</a>
+        </nav>
+      </header>
+      <div class="mt-12">
+        <h1 class="text-3xl sm:text-6xl font-bold mb-2">Hey, I'm Paul.</h1>
+        <h2 class="text-lg sm:text-2xl">
+          I'm a software developer based in San Diego, CA. ☀️
+        </h2>
+        <hr class="border-gray-300 border my-4 max-w-[600px]" />
+      </div>
 
-    <div
-      class="w-full max-w-[1080px] mx-auto border border-red-500 h-full bg-gray-50"
-    >
-      <h1 class="text-6xl font-bold">Hey, I'm Paul.</h1>
+      <div>
+        <p class="text-xl text-stone-700 leading-8">
+          Currently I work as a frontend engineer at
+          <a
+            class="underline underline-offset-2"
+            href="https://www.iterable.com"
+            >Iterable</a
+          >, where we help our customers send keep in touch with their
+          customers. Before that, I worked at
+          <a
+            class="underline underline-offset-2"
+            href="https://www.accenture.com"
+            >Accenture Interactive / Intrepid Pursuits</a
+          >, where I helped build software solutions for a variety of clients in
+          Telecommunications, Finance, and Education. I first learned to code
+          from the good people at
+          <a
+            class="underline underline-offset-2"
+            href="https://en.wikipedia.org/wiki/Dev_Bootcamp"
+          >
+            Dev Bootcamp
+          </a>
+          .
+        </p>
+      </div>
+
+      <div className="lg:pl-20">
+        <a href="https://twitter.com/paultnewsam"> Twitter </a>
+        <a href="https://github.com/pnewsam" className="mt-4"> GitHub </a>
+        <a href="https://www.linkedin.com/in/paul-newsam/" className="mt-4">
+          LinkedIn
+        </a>
+        <a
+          href="mailto:paul.newsam@gmail.com"
+          className="mt-8 border-t border-slate-100 pt-8 dark:border-slate-700/40"
+        >
+          Email
+        </a>
+        <div
+          className="mt-8 border-t border-slate-100 pt-8 dark:border-slate-700/40"
+        >
+          <span
+            className="text-sm font-medium text-slate-800 dark:text-slate-200"
+          >
+            Consulting Inquiries:&nbsp;
+            <a
+              className="text-sm font-medium text-slate-800 transition hover:text-riptide-400 dark:text-slate-200 dark:hover:text-riptide-400"
+              href="https://www.verismus.com"
+            >
+              Verismus, LLC
+            </a>
+          </span>
+        </div>
+      </div>
     </div>
 
     <script type="module" src="./main.js"></script>

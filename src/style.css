@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 :root {
-  font-family: Jost, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: underline;
 }
