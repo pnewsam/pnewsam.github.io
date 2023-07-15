@@ -27,23 +27,34 @@ const postTemplate = (post) => {
     day: "numeric",
   });
   return `
-    <div class="post mt-12">
+    <article id="${slug}" class="pt-12 mb-40">
       <h1>${title}</h1>
       <h3>${description}</h3>
       <date>${readableCreatedAt}</date>
-      <hr />
-      <div>${convertMarkdown(content)}</div>
-    </div>
+      <hr class="bold" />
+      <section>${convertMarkdown(content)}</section>
+    </article>
   `;
 };
 
 const main = async function () {
-  const posts = await getPosts();
+  var posts = await getPosts();
+  posts = posts.sort(
+    (a, b) =>
+      new Date(b.attributes.publishedAt) - new Date(a.attributes.publishedAt)
+  );
+
   posts.forEach((post) => {
     const postElement = document.createElement("div");
     const template = postTemplate(post);
     console.log({ template, postElement });
     postElement.innerHTML = postTemplate(post);
     document.querySelector("#posts").appendChild(postElement);
+
+    document.querySelector("#posts-list").innerHTML += `
+      <li>
+        <a href="#${post.attributes.slug}">${post.attributes.title}</a>
+      </li>
+    `;
   });
 };
