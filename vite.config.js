@@ -5,8 +5,6 @@ export default {
     rollupOptions: {
       input: {
         main: "./src/index.html",
-        blog: "./src/blog/index.html",
-        likes: "./src/likes/index.html",
       },
     },
     outDir: "../docs",
