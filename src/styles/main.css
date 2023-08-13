@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 :root {
-  font-family: "Jost", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "DM Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 @layer components {
   body {
-    @apply bg-stone-50;
+    @apply bg-stone-100;
   }
   h1,
   h2,
@@ -44,7 +44,7 @@
     @apply text-blue-500 hover:text-blue-600 underline;
   }
   p {
-    @apply text-xl leading-8 text-stone-700;
+    @apply text-xl leading-8 text-stone-600;
   }
   p + p,
   p + pre,
@@ -75,11 +75,8 @@
   q {
     @apply italic text-gray-600 bg-blue-50;
   }
-  hr:not(.bold) {
-    @apply border-stone-300 border my-12 max-w-[50%] mx-auto;
-  }
-  hr.bold {
-    @apply border-stone-700 border-4 my-8;
+  hr {
+    @apply border-stone-300 border my-4 w-full mx-auto;
   }
   .container {
     /* @apply max-w-3xl mx-auto px-4; */
