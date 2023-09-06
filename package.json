@@ -5,9 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "deploy": "vite build --emptyOutDir && git add -A && git commit -m 'Deploy commit' && git push origin HEAD"
+    "build": "vite build --emptyOutDir",
+    "preview": "vite preview"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
