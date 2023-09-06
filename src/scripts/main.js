@@ -1,3 +1,4 @@
+import "./TopNav";
 import "../styles/reset.css";
 
 document.addEventListener("DOMContentLoaded", () => {
