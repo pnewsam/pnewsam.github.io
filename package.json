@@ -16,6 +16,7 @@
     "vite": "^4.4.0"
   },
   "dependencies": {
+    "lit": "^2.8.0",
     "showdown": "^2.1.0"
   }
 }
