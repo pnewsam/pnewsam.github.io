@@ -1,5 +1,5 @@
 import { LitElement, unsafeCSS } from "lit";
-import style from "../styles/tailwind.css";
+import style from "../styles/tailwind.css?inline";
 
 const tailwindElement = unsafeCSS(style);
 
